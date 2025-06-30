@@ -7,4 +7,7 @@
 
 body {
   @apply bg-darkBrown
+  
+  /* @apply bg-[#4b363e] */
+
 }

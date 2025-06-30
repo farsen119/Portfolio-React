@@ -5,6 +5,8 @@ import HeroGradient from "./components/herosection/HeroGradient";
 import HeroMain from "./components/herosection/HeroMain";
 import SubHeroSection from "./components/herosection/SubHeroSection";
 import NavbarMain from "./components/navbar/NavbarMain";
+import SkillsMain from "./components/skillsSection/SkillsMain";
+import SubSkills from "./components/skillsSection/SubSkills";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
       <HeroGradient />
       <SubHeroSection />
       <AboutMeMain/>
+      <SkillsMain/>
+      <SubSkills/>
       <HelperSection/>
     </main>
   );
