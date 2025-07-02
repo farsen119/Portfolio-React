@@ -12,6 +12,8 @@ import ProjectsMain from "./components/projectSection/ProjectsMain";
 import SkillsMain from "./components/skillsSection/SkillsMain";
 import SubSkills from "./components/skillsSection/SubSkills";
 import WhatsappFloatButton from "./components/WhatsappFloatButton";
+import { MdOutlineLightMode } from "react-icons/md";
+
 
 // Only the extra theme options (not the main color)
 const themes = [
@@ -48,13 +50,13 @@ export default function App() {
       style={style}
     >
       {/* Palette Icon Button */}
-      <div className="fixed top-4 right-4 z-50" ref={menuRef}>
+      <div className="fixed lg:p-0 top-4 right-4 z-50 sm:pt-[100px]" ref={menuRef}>
         <button
           onClick={() => setOpen((prev) => !prev)}
           className="p-3 rounded-full bg- text-black font-bold shadow-lg border border-none hover:scale-110 transition-all flex items-center justify-center"
           title="Change Theme"
         >
-          <MdOutlineColorLens size={28} />
+          <MdOutlineLightMode size={28} />
         </button>
         {open && (
           <div className="mt-2 bg-[#af9191] rounded-lg shadow-lg border border-none flex flex-col min-w-[120px]">
