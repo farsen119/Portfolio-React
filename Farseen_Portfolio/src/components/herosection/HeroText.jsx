@@ -63,7 +63,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0}}
-        href="/CV/Muhammed_Farseen_KP_Resume.pdf"
+        href={`${import.meta.env.BASE_URL}CV/Muhammed_Farseen_KP_Resume.pdf`}
         download
         aria-label="Download my CV"
         className="mt-6 px-6 py-3 rounded-full text-xl font-bold font-body text-white border-cyan border flex items-center gap-2 bg-gradient-to-r from-darkCyan to-orange transition-all duration-500 hover:scale-110 hover:border-orange cursor-pointer hover:shadow-cyanShadow w-fit relative overflow-hidden"
