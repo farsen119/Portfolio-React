@@ -7,19 +7,21 @@ import { fadeIn } from "../../framerMotion/variants";
 const projects = [
   {
     name: "Digital Healthcare & Prescription",
-    tech: "Angular,Django-DRF,Bootstrap,SQL",
+    tech: "Angular, Django-DRF, Bootstrap, SQL",
     year: "Jun2025",
     align: "right",
     image: "../../public/images/website-img-1.jpg",
     link: "https://github.com/farsen119/Digital-Healthcare",
+    description: "A platform for digital healthcare management and e-prescriptions, enabling doctors and patients to interact securely online."
   },
   {
     name: "StockPredict",
-    tech: "React, Python, Django ,Machine Learning",
+    tech: "React, Python, Django, Machine Learning",
     year: "May2025",
     align: "left",
     image: "../../public/images/project2.png",
     link: "https://github.com/farsen119/Stock_Market_Portal",
+    description: "A web app that predicts stock prices using machine learning models and provides visual analytics for users."
   },
   {
     name: "Portfolio",
@@ -28,6 +30,7 @@ const projects = [
     align: "right",
     image: "../../public/images/website-img-3.jpg",
     link: "https://github.com/farsen119/Portfolio-React",
+    description: "My personal portfolio website built with React and Tailwind CSS, showcasing my projects, skills, and experience."
   },
   {
     name: "CRUD App",
@@ -36,6 +39,7 @@ const projects = [
     align: "left",
     image: "../../public/images/project4.png",
     link: "https://github.com/farsen119/CRUD-angular-and-django",
+    description: "A full-stack CRUD application for managing data with Angular frontend and Django REST API backend."
   },
 ];
 
@@ -61,6 +65,7 @@ const ProjectsMain = () => {
               image={item.image} 
               link={item.link}
               tech={item.tech}
+              description={item.description}
             />
           );
         })}
