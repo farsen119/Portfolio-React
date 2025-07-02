@@ -1,9 +1,8 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const HeroPic = () => {
-  // Generate a unique id ONCE for the gradient
   const gradientIdRef = useRef("blobGradient" + Math.random().toString(36).substr(2, 9));
   const gradientId = gradientIdRef.current;
 
@@ -12,10 +11,17 @@ const HeroPic = () => {
       variants={fadeIn('left', 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0}} 
-      className='h-full flex items-center justify-center'
+      viewport={{ once: false, amount: 0 }}
+      className='h-full flex items-center justify-center relative'
     >
-      <img src="/images/FARSEEN2.png" alt="Farseen KP" className='max-h-[470px] w-auto' />
+      {/* ✅ Load image from public folder using BASE_URL for GitHub Pages */}
+      <img
+        src={`${import.meta.env.BASE_URL}images/FARSEEN2.png`}
+        alt="Farseen KP"
+        className='max-h-[470px] w-auto'
+      />
+
+      {/* Background animated SVG blob */}
       <div className='absolute -z-10 flex justify-center items-center animate-pulse'>
         <svg
           width="600"
@@ -27,8 +33,8 @@ const HeroPic = () => {
         >
           <defs>
             <linearGradient id={gradientId} x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#5fcfdd"/>
-              <stop offset="1" stopColor="#f0a94f"/>
+              <stop stopColor="#5fcfdd" />
+              <stop offset="1" stopColor="#f0a94f" />
             </linearGradient>
           </defs>
           <path
@@ -39,7 +45,7 @@ const HeroPic = () => {
         </svg>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default HeroPic
+export default HeroPic;
