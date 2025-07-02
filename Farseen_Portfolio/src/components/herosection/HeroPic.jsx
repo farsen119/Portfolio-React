@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const HeroPic = () => {
+  // Generate a unique id ONCE for the gradient
+  const gradientIdRef = useRef("blobGradient" + Math.random().toString(36).substr(2, 9));
+  const gradientId = gradientIdRef.current;
+
   return (
     <motion.div
       variants={fadeIn('left', 0.2)}
@@ -22,14 +26,14 @@ const HeroPic = () => {
           className="blur-md animate-[spin_20s_linear_infinite]"
         >
           <defs>
-            <linearGradient id="blobGradient" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+            <linearGradient id={gradientId} x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
               <stop stopColor="#5fcfdd"/>
               <stop offset="1" stopColor="#f0a94f"/>
             </linearGradient>
           </defs>
           <path
             d="M144.5,320Q120,240,180,180Q240,120,320,144.5Q400,169,420,234.5Q440,300,400,370Q360,440,280,420Q200,400,144.5,320Z"
-            fill="url(#blobGradient)"
+            fill={`url(#${gradientId})`}
             opacity="0.85"
           />
         </svg>

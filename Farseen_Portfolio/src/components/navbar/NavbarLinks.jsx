@@ -1,6 +1,5 @@
 import React from 'react'
-import {Link} from 'react-scroll';
-
+import { Link } from 'react-scroll';
 
 const links = [
   { link: "About Me", section: "about" },
@@ -19,9 +18,10 @@ const NavbarLinks = () => {
             <Link 
               to={link.section}
               smooth={true}
-              spy= {true}
+              spy={true}
               duration={500}
               offset={-130}
+              aria-label={link.link}
               className='cursor-pointer text-white hover:text-cyan  transition-all duration-500'
             >
               {link.link}

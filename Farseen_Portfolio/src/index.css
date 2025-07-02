@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  @apply bg-darkBrown
-  
-  /* @apply bg-[#4b363e] */
-
+  @apply bg-darkBrown;
 }

@@ -31,6 +31,7 @@ const SingleProject = ({name, year, align, image, link, tech, description }) => 
               onClick={() => setShowDetails(false)}
               className="text-orange font-bold text-lg px-2"
               title="Close"
+              aria-label="Close project details"
             >
               ×
             </button>
@@ -57,12 +58,14 @@ const SingleProject = ({name, year, align, image, link, tech, description }) => 
             href={link} 
             target="_blank" 
             rel="noopener noreferrer"
+            aria-label={`View ${name} project on GitHub`}
             className={` text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${align === 'left' ? 'md:justify-self-end' : 'md:justify-self-start'} `}
           >
             Git Repo <BiSolidRightTopArrowCircle/>
           </a>
           <button
             onClick={() => setShowDetails(!showDetails)}
+            aria-label={`Show details for ${name} project`}
             className="px-4 py-1 rounded-full border border-cyan text-cyan hover:bg-cyan hover:text-black transition-all duration-300 font-semibold"
           >
             Details
