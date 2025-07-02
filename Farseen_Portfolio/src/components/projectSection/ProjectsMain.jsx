@@ -4,38 +4,40 @@ import SingleProject from './SingleProject'
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Digital Healthcare & Prescription",
+    tech: "Angular,Django-DRF,Bootstrap,SQL",
+    year: "Jun2025",
     align: "right",
     image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    link: "https://github.com/farsen119/Digital-Healthcare",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "StockPredict",
+    tech: "React, Python, Django ,Machine Learning",
+    year: "May2025",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../public/images/project2.png",
+    link: "https://github.com/farsen119/Stock_Market_Portal",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Portfolio",
+    tech: "React, Tailwind CSS",
+    year: "Jan2025",
     align: "right",
     image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    link: "https://github.com/farsen119/Portfolio-React",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "CRUD App",
+    tech: "Angular, Django, REST API",
+    year: "Apr2025",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../public/images/project4.png",
+    link: "https://github.com/farsen119/CRUD-angular-and-django",
   },
 ];
-
 
 const ProjectsMain = () => {
   return (
@@ -57,6 +59,8 @@ const ProjectsMain = () => {
               year={item.year} 
               align={item.align} 
               image={item.image} 
+              link={item.link}
+              tech={item.tech}
             />
           );
         })}

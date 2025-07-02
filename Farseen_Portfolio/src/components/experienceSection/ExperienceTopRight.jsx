@@ -2,10 +2,13 @@ import React from 'react'
 
 const ExperienceTopRight = () => {
   return (
-    <div className='xl:w-[25%] lg:w-[30%] border border-lightBrown p-4 rounded-xl '>
-      <p className='text-lg text-center text-lightGrey'>
-        I specialize in <span className='font-bold text-white'>React and modern JavaScript</span>, leveraging best practice to create scalable and maintainable solution .my experience spans working on deverse projects,from small business websites to <span className='font-bold text-white'>complex front-end systems</span> ,always aiming fro clean code and exceptiona; user experience.``
-      </p>
+    <div className="w-[300px] p-4 rounded-xl border border-lightBrown h-full flex flex-col justify-between">
+      <div>
+        <p className="font-bold text-cyan text-lg mb-2 text-center">Internship Summary</p>
+        <p className="text-lightGrey text-center">
+          Gained hands-on experience in <span className='font-bold text-white'>Python, Django, Angular, REST API development,</span> and core web technologies. Collaborated in an agile team environment, contributing to module-based development, feature implementation, and debugging. Practiced real-world workflows using <span className='font-bold text-white'>Git</span>, participated in code reviews, and actively engaged in team discussions and daily stand-up meetings.
+        </p>
+      </div>
     </div>
   )
 }
