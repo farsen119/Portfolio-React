@@ -10,21 +10,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0}}
-        className='lg:text-2xl sm:text-xl uppercase text-cyan'
-        style={{
-          textShadow: `
-            0 1px 0 #ccc,
-            0 2px 0 #c9c9c9,
-            0 3px 0 #bbb,
-            0 4px 0 #b9b9b9,
-            0 5px 0 #aaa,
-            0 6px 1px rgba(0,0,0,0.1),
-            0 0 5px rgba(0,0,0,0.1),
-            0 1px 3px rgba(0,0,0,0.3),
-            0 3px 5px rgba(0,0,0,0.2),
-            0 5px 10px rgba(0,0,0,0.25)`,
-          transform: 'perspective(500px) rotateX(25deg)'
-        }}
+        className='lg:text-3xl sm:text-xl uppercase text-cyan'
       >
         Full Stack Developer
       </motion.h2>

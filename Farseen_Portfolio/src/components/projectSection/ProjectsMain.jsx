@@ -28,7 +28,7 @@ const projects = [
     tech: "React, Tailwind CSS",
     year: "Jan2025",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
+    image: "../../public/images/project3.png",
     link: "https://github.com/farsen119/Portfolio-React",
     description: "My personal portfolio website built with React and Tailwind CSS, showcasing my projects, skills, and experience."
   },
