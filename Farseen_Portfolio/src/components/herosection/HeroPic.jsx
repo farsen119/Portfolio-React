@@ -15,7 +15,7 @@ const HeroPic = () => {
       viewport={{ once: false, amount: 0}} 
       className='h-full flex items-center justify-center'
     >
-      <img src="../../public/images/FARSEEN2.png" alt="Farseen KP" className='max-h-[470px] w-auto' />
+      <img src="/images/FARSEEN2.png" alt="Farseen KP" className='max-h-[470px] w-auto' />
       <div className='absolute -z-10 flex justify-center items-center animate-pulse'>
         <svg
           width="600"
